@@ -20,20 +20,20 @@ db.append([])
 db.append([]) 
 db.append([])        #NEED AMOUNT OF THESE AS PEOPLE 
 
-db[0].append(cv2.imread('myfaces/dads/1.jpg',0))
+db[0].append(cv2.imread('myfaces/1.jpg',0))
 
 
-db[1].append(cv2.imread('myfaces/veronicas/1.jpg',0))
-db[1].append(cv2.imread('myfaces/veronicas/2.jpg',0))
-db[1].append(cv2.imread('myfaces/veronicas/3.jpg',0))
-db[1].append(cv2.imread('myfaces/veronicas/4.jpg',0))
-db[1].append(cv2.imread('myfaces/veronicas/5.jpg',0))
-db[1].append(cv2.imread('myfaces/veronicas/6.jpg',0))
+db[1].append(cv2.imread('yourface/1.jpg',0))
+db[1].append(cv2.imread('yourface/2.jpg',0))
+db[1].append(cv2.imread('yourface/3.jpg',0))
+db[1].append(cv2.imread('yourface/4.jpg',0))
+db[1].append(cv2.imread('yourface/5.jpg',0))
+db[1].append(cv2.imread('yourface/6.jpg',0))
 
 
-db[2].append(cv2.imread('myfaces/keiths/1.jpg',0))
-db[2].append(cv2.imread('myfaces/keiths/2.jpg',0))
-db[2].append(cv2.imread('myfaces/keiths/3.jpg',0))
+db[2].append(cv2.imread('uglyface/1.jpg',0))
+db[2].append(cv2.imread('uglyface/2.jpg',0))
+db[2].append(cv2.imread('uglyface/3.jpg',0))
 
 
 
@@ -93,7 +93,7 @@ for i in range(0,len(db)):			#filling out db distance matrix
 		q[i].append(np.dot(iU,imMmeancv[cn]))
 		cn += 1
 
-image = cv2.imread('myfaces/veronicas/1.jpg',0)     #for testing 
+image = cv2.imread('myfaces/3.jpg',0)     #for testing 
 bT = image - meancv 		
 qT = np.dot(iU,bT)	#evalues of new image
 
